@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Link } from 'react-router-dom'
+/** Nested route example: https://tylermcginnis.com/react-router-nested-routes/ */
 
 /* TODO: access this data with an API */
 const infoData = [
