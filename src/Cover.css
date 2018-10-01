@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+@import url('https://fonts.googleapis.com/css?family=Lato:100|Open+Sans');
+
+.intro {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background-color: #b87272;
+	display: table;
+	top: 0;
+}
+
+.intro .inner {
+	display: tabel-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.content {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+.content h1 {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	font-size: 4em;
+	text-shadow: 0px 0px 300px #000;
+}
+
+.btn {
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 9px;
+	color: 	#a74b4e;
+	padding: .5em .5em;
+	border: solid #a74b4e .2em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
