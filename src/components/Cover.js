@@ -5,10 +5,14 @@ import ConnectedBlogs from './Blogs'
 import {
   handleInitialBlogData,
 } from '../actions/blogs'
+import {
+	handleLoading
+} from '../actions/shared'
 
 class Cover extends Component {
 	blogClick  = () => {
-		const { dispatch } = this.props
+		const { dispatch, blogs } = this.props
+		if (!blogs.length > 0) { dispatch(handleLoading()) }
     	dispatch(handleInitialBlogData())
 	}
 	render () {
@@ -26,6 +30,10 @@ class Cover extends Component {
 					</div>
 				</section>
 				<section>
+					{
+						this.props.loading &&
+						<h1>Loading</h1>
+					}
 					<ConnectedBlogs />
 				</section>
 			</div>
@@ -33,4 +41,7 @@ class Cover extends Component {
 	}
 }
 
-export default connect((state) => ({}))(Cover)
+export default connect((state) => ({
+	loading: state.loading,
+	blogs: state.blogs
+}))(Cover)

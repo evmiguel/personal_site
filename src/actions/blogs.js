@@ -1,14 +1,8 @@
 import {
-  RECEIVE_DATA
+  RECEIVE_DATA,
+  receiveData
 } from '../actions/shared'
 
-
-function receiveData (blogs) {
-  return {
-    type: RECEIVE_DATA,
-    blogs
-  }
-}
 
 // This is a thunk, whereby a function is dispatched, instead of an action
 // The action will be delayed until the "GET request" has been made
