@@ -24,7 +24,7 @@ const infoData = [
 class InfoComponent extends Component {
 	render() {
 		console.log(this.props.match)
-		const component = infoData.find(({ id }) => ( id === this.props.match.params.infoId ) ) 
+		const component = infoData.find(({ id }) => ( id === this.props.match.params.infoId ) )
 		return(
 			<div className='info-component'>
 				<h3>{component.name}</h3>
@@ -46,7 +46,7 @@ class Info extends Component {
 								<Link to={`${this.props.match.url}/${data.id}`}>{data.name}</Link>
 							</li>
 						)
-					}	
+					}
 				</ul>
 				<Route path={`${this.props.match.path}/:infoId`} component={InfoComponent} />
 			</div>

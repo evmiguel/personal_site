@@ -3,13 +3,13 @@ import './Cover.css';
 
 const Cover = (props) => {
 	return (
-		<section class="intro">
-			<div class="inner">
-				<div class="content">
+		<section className="intro">
+			<div className="inner">
+				<div className="content">
 					<h1>Erika Miguel</h1>
-					<div class="icons">
-						<a class="btn" href="#">About</a>
-						<a class="btn" href="#">Blog</a>
+					<div className="icons">
+						<a className="btn" href="#">About</a>
+						<a className="btn" href="#">Blog</a>
 					</div>
 				</div>
 			</div>
