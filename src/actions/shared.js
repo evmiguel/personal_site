@@ -13,8 +13,7 @@ export function handleInitialData () {
   return (dispatch) => {
     return new Promise((res, rej) => {
     	setTimeout(() => {
-    		const blogs = ["blog1", "blog2", "blog3"]
-        res(blogs)
+        res()
     	}, 3000)
     }).then((blogs) => {
       dispatch(receiveData(blogs)) // send action to the store.

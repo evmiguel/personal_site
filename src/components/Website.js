@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link, Route } from 'react-router-dom'
-import Blog from './Blog'
+import Blogs from './Blogs'
 import Info from './Info'
 
 function Website({ match }) {
@@ -9,7 +9,7 @@ function Website({ match }) {
 				<Link className='info-link' to='/info'>Info</Link>
 				<Link className='blog-link' to='/blog'>Blog</Link>
 			<Route path='/info' component={Info} />
-			<Route path='/blog' component={Blog} />
+			<Route path='/blog' component={Blogs} />
 		</div>
 	)
 }
