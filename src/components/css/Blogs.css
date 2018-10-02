@@ -1,0 +1,30 @@
+ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+hr {
+	border: 0;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(left, #ccc, #a74b4e, #ccc);
+}
+
+.blog__item {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.blog__heading, .blog__content {
+	text-align: left;
+}
+
+@media screen and (min-width: 500px) {
+	hr {
+		width: 100%;
+	}
+	.blog__item {
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+}

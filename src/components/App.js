@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
-import './App.css';
+import './css/App.css';
 import ConnectedCover from './Cover'
 import { connect } from 'react-redux'
 import {

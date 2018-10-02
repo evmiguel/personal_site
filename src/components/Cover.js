@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import './Cover.css';
+import './css/Cover.css';
 import { connect } from 'react-redux'
 import ConnectedBlogs from './Blogs'
 import ConnectedButton from './Button'
+import Loader from './Loader'
 import {
   handleInitialBlogData,
   handleTearDownBlogs
@@ -17,7 +18,6 @@ class Cover extends Component {
 		const { dispatch, blogs } = this.props
 		if (!blogs.length > 0) {
 			dispatch(handleLoading())
-			console.log(document.getElementById("aboutButton"))
 			dispatch(handleInitialBlogData())
 		}
 	}
@@ -36,16 +36,20 @@ class Cover extends Component {
 							<h1>Erika Miguel</h1>
 							<div className="icons">
 								<ConnectedButton name="aboutButton" onClick={this.aboutClick} text="About" />
-								<a className="btn" href="#" onClick={this.blogClick}>Blog</a>
+								<ConnectedButton name="blogButton" onClick={this.blogClick} text="Blog" />
 							</div>
 						</div>
 					</div>
 				</section>
-				<section>
 					{
+
 						this.props.loading &&
-						<h1>Loading</h1>
+						<section className="loading__section">
+							<Loader />
+						</section>
+
 					}
+				<section>
 					<ConnectedBlogs />
 				</section>
 			</div>

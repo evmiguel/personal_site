@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Blog from './Blog'
+import  './css/Blogs.css'
 import { connect } from 'react-redux'
 
 class Blogs extends Component {
