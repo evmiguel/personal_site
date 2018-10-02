@@ -5,13 +5,13 @@ import { connect } from 'react-redux'
 
 class Blogs extends Component {
   render() {
-    const { loading, blogs } = this.props
+    const { blogs } = this.props
 
     return(
       <ul>
         {
-          blogs.map((blog, index) => (
-            <li><Blog key={index} blog={blog}/></li>
+          blogs.map(blog => (
+            <li key={blog.id} ><Blog blog={blog}/></li>
           ))
         }
       </ul>

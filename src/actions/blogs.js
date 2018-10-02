@@ -1,5 +1,4 @@
 import {
-  RECEIVE_DATA,
   TEAR_DOWN,
   receiveData
 } from '../actions/shared'

@@ -14,7 +14,15 @@ import {
 } from '../actions/shared'
 
 class Cover extends Component {
-	blogClick  = () => {
+	componentDidMount() {
+		if (this.props.renderBlog === true){
+			this.renderBlog()
+		}
+		else if (this.props.renderAbout === true){
+			this.renderAbout()
+		}
+	}
+	renderBlog  = () => {
 		const { dispatch, blogs } = this.props
 		if (!blogs.length > 0) {
 			dispatch(handleLoading())
@@ -22,7 +30,7 @@ class Cover extends Component {
 		}
 	}
 
-	aboutClick = () => {
+	renderAbout = () => {
 		const { dispatch, blogs, loading } = this.props
 		if ( loading ) { dispatch(handleLoadingTearDown()) }
 		if ( blogs.length > 0 ) { dispatch(handleTearDownBlogs()) }
@@ -35,8 +43,8 @@ class Cover extends Component {
 						<div className="content">
 							<h1>Erika Miguel</h1>
 							<div className="icons">
-								<ConnectedButton name="aboutButton" onClick={this.aboutClick} text="About" />
-								<ConnectedButton name="blogButton" onClick={this.blogClick} text="Blog" />
+								<ConnectedButton name="aboutButton" onClick={this.renderAbout} link="/" text="About" />
+								<ConnectedButton name="blogButton" onClick={this.renderBlog} link="blog" text="Blog" />
 							</div>
 						</div>
 					</div>

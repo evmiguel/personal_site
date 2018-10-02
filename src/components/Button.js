@@ -1,15 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
+import { Link } from 'react-router-dom'
 
 const ConnectedButton = (props) => {
 	const disabled = props.loading
 	return (
-		<a	id={props.name}
-			className={`btn ${disabled ? "isDisabled" : ""}`}
-			href="#" onClick={props.onClick}>
-			{props.text}
-		</a>
+		<Link to={props.link} className={`btn ${disabled ? "isDisabled" : ""}`} onClick={props.onClick}>{props.text}</Link>
 	)
 }
 
