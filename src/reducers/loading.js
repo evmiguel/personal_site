@@ -1,6 +1,7 @@
 import {
   RECEIVE_DATA,
-  LOADING
+  LOADING,
+  TEAR_DOWN
 } from '../actions/shared'
 
 export default function loading (state = false, action) {
@@ -9,6 +10,8 @@ export default function loading (state = false, action) {
       return false
     case LOADING :
     	return true
+    case TEAR_DOWN :
+      return false
     default :
       return state
   }

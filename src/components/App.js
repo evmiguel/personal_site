@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom'
 import './App.css';
 import ConnectedCover from './Cover'
-import Website from './Website'
 import { connect } from 'react-redux'
 import {
   handleInitialData

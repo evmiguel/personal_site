@@ -1,8 +1,8 @@
 import {
   RECEIVE_DATA,
+  TEAR_DOWN,
   receiveData
 } from '../actions/shared'
-
 
 // This is a thunk, whereby a function is dispatched, instead of an action
 // The action will be delayed until the "GET request" has been made
@@ -17,5 +17,17 @@ export function handleInitialBlogData () {
       dispatch(receiveData(blogs)) // send action to the store.
       							               // store will then return a new state based on the reducer
     })
+  }
+}
+
+function tearDown() {
+  return {
+    type: TEAR_DOWN
+  }
+}
+
+export function handleTearDownBlogs() {
+  return (dispatch) => {
+    dispatch(tearDown())
   }
 }
