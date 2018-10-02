@@ -7,7 +7,10 @@ const Cover = (props) => {
 			<div class="inner">
 				<div class="content">
 					<h1>Erika Miguel</h1>
-					<a class="btn" href="#">Welcome</a>
+					<div class="icons">
+						<a class="btn" href="#">About</a>
+						<a class="btn" href="#">Blog</a>
+					</div>
 				</div>
 			</div>
 		</section>

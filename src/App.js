@@ -10,7 +10,6 @@ class App extends Component {
     return (
       <div className="App">
       	<Cover />
-      	<Website />
       </div>
     );
   }

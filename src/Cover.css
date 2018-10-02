@@ -29,6 +29,11 @@
 	text-shadow: 0px 0px 300px #000;
 }
 
+.icons {
+	display: flex;
+	justify-content: center;
+}
+
 .btn {
 	font-family: 'Open Sans', sans-serif;
 	border-radius: 9px;
@@ -37,4 +42,10 @@
 	border: solid #a74b4e .2em;
 	text-transform: uppercase;
 	text-decoration: none;
+	margin-right: 1em;
+}
+
+.btn:hover {
+	color: #fff;
+	border-color: #fff;
 }
