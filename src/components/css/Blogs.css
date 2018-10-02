@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100');
+
 ul {
 	list-style: none;
 	padding-left: 0px;
@@ -17,6 +19,18 @@ hr {
 
 .blog__heading, .blog__content {
 	text-align: left;
+	font-family: 'Lato', sans-serif;
+}
+
+.blog__heading {
+	font-size: 2em;
+	color: #a74b4e;
+}
+
+.blog__content {
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #80808054;
 }
 
 @media screen and (min-width: 500px) {
