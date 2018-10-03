@@ -1,8 +1,7 @@
 /** Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader */
 
 .loading__section {
-  display: flex;
-  justify-content: center;
+  position: relative;
   height: 350px;
 }
 
@@ -12,7 +11,10 @@
   border-top: .2em solid #b87272;
   width: 4em;
   height: 4em;
-  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
 }
