@@ -18,9 +18,22 @@
 }
 
 .content {
-	max-width: 500px;
+	max-width: 90%;
 	margin: 0 auto;
 	text-align: center;
+}
+
+.about {
+	display: flex;
+}
+
+.about__content{
+	font-family: 'Lato', sans-serif;
+    width: 90%;
+    text-align: right;
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 .content h1 {
 	font-family: 'Lato', sans-serif;

@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import './css/Cover.css';
+import './css/Page.css';
 import { connect } from 'react-redux'
 import ConnectedBlogs from './Blogs'
 import ConnectedButton from './Button'
 import Loader from './Loader'
+import { about } from './content/text'
 import {
   handleInitialBlogData,
   handleTearDownBlogs
@@ -13,7 +14,12 @@ import {
 	handleLoadingTearDown
 } from '../actions/shared'
 
-class Cover extends Component {
+class Page extends Component {
+
+	state = {
+		about: ''
+	}
+
 	componentDidMount() {
 		if (this.props.renderBlog === true){
 			this.renderBlog()
@@ -34,6 +40,9 @@ class Cover extends Component {
 		const { dispatch, blogs, loading } = this.props
 		if ( loading ) { dispatch(handleLoadingTearDown()) }
 		if ( blogs.length > 0 ) { dispatch(handleTearDownBlogs()) }
+		this.setState({
+			about: about
+		})
 	}
 	render () {
 		return (
@@ -49,6 +58,7 @@ class Cover extends Component {
 						</div>
 					</div>
 				</section>
+					<h2 className="blog__construction">This page is under construction.</h2>
 					{
 
 						this.props.loading &&
@@ -57,6 +67,10 @@ class Cover extends Component {
 						</section>
 
 					}
+				<section className="about">
+					<p>IMAGE</p>
+					<p className='about__content'>{this.state.about}</p>
+				</section>
 				<section>
 					<ConnectedBlogs />
 				</section>
@@ -68,4 +82,4 @@ class Cover extends Component {
 export default connect((state) => ({
 	loading: state.loading,
 	blogs: state.blogs
-}))(Cover)
+}))(Page)

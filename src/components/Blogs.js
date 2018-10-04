@@ -8,13 +8,13 @@ class Blogs extends Component {
     const { blogs } = this.props
 
     return(
-      <ul>
-        {
-          blogs.map(blog => (
-            <li key={blog.id} ><Blog blog={blog}/></li>
-          ))
-        }
-      </ul>
+        <ul>
+          {
+            blogs.map(blog => (
+              <li key={blog.id} ><Blog blog={blog}/></li>
+            ))
+          }
+        </ul>
     )
   }
 }

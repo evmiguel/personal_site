@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Route } from 'react-router-dom'
 import './css/App.css';
-import ConnectedCover from './Cover'
+import ConnectedPage from './Page'
 import { connect } from 'react-redux'
 
 class App extends Component {
@@ -11,12 +11,16 @@ class App extends Component {
 
 
       <Route exact path="/"
-            render={() => ( <ConnectedCover renderAbout={true} /> )}
+            render={() => ( <ConnectedPage renderAbout={true} /> )}
       />
 
       <Route path="/blog"
-            render={() => ( <ConnectedCover renderBlog={true}/> )}
+            render={() => ( <ConnectedPage renderBlog={true}/> )}
       />
+
+      <footer className="app__footer">
+        <p>This page is powered by S3 static hosting, React, Redux, and Dynamodb. The entirety of this site has been created by Erika Miguel.</p>
+      </footer>
 
       </div>
     );

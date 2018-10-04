@@ -17,9 +17,17 @@ hr {
 	padding-right: 1em;
 }
 
-.blog__heading, .blog__content, .blog__date {
+.blog__heading, .blog__content, .blog__date, .blog__construction {
 	text-align: left;
 	font-family: 'Lato', sans-serif;
+}
+
+.blog__construction {
+	text-align: center;
+	border-style: dashed;
+	border-width: thin;
+	width: 80%;
+	margin: auto;
 }
 
 .blog__date {
