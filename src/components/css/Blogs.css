@@ -17,9 +17,13 @@ hr {
 	padding-right: 1em;
 }
 
-.blog__heading, .blog__content {
+.blog__heading, .blog__content, .blog__date {
 	text-align: left;
 	font-family: 'Lato', sans-serif;
+}
+
+.blog__date {
+	color: #a74b4e;
 }
 
 .blog__heading {

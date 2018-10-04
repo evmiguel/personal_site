@@ -14,7 +14,10 @@ export function handleInitialBlogData () {
     fetch("https://api.erikamiguel.com/blog")   // This is my personal API. Check it out!
       .then(data => data.json())
       .catch(err => alert("There was an error!"))
-      .then(data => dispatch(receiveData(data.posts))) // send action to the store.
+      .then(data => dispatch(receiveData(data.posts.sort((a,b) => {
+              return Date.parse(b.date) - Date.parse(a.date)
+          })
+        ))) // send action to the store.
                                                         // store will then return a new state based on the reducer
   }
 }
