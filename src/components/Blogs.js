@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Blog from './Blog'
+import BlogLink from './BlogLink'
 import  './css/Blogs.css'
 import { connect } from 'react-redux'
 
@@ -10,8 +10,8 @@ class Blogs extends Component {
     return(
         <ul>
           {
-            blogs.map(blog => (
-              <li key={blog.id} ><Blog blog={blog}/></li>
+            this.props.blogIds.map(blogId => (
+              <li key={blogId} ><BlogLink id={blogId}/></li>
             ))
           }
         </ul>
@@ -19,6 +19,11 @@ class Blogs extends Component {
   }
 }
 
-export default connect((state) => ({
-  blogs: state.blogs
-}))(Blogs)
+function mapStateToProps({ blogs }){
+  return {
+    blogIds: Object.keys(blogs)
+      .sort((a,b) => Date.parse(blogs[b].date) - Date.parse(blogs[a].date))
+  }
+}
+
+export default connect(mapStateToProps)(Blogs)

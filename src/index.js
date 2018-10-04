@@ -11,10 +11,8 @@ import { createStore } from 'redux'
 const store = createStore(reducer, middleware)
 
 ReactDOM.render(
-	<BrowserRouter>
 	  <Provider store={store}>
 	    <App />
-	  </Provider>
-	</BrowserRouter>,
+	  </Provider>,
   document.getElementById('root')
 )
