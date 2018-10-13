@@ -6,12 +6,8 @@ import { connect } from 'react-redux'
 import Blogs from './Blogs'
 import BlogPost from './BlogPost'
 import { handleInitialBlogData } from '../actions/blogs'
-
-const About = (props) => {
-  return(
-    <div> About </div>
-  )
-}
+import About from './About'
+import Resume from './Resume'
 
 class App extends Component {
   componentDidMount() {
@@ -25,6 +21,7 @@ class App extends Component {
 
           <Page />
           <Route exact path="/" component={About} />
+          <Route path="/resume" component={Resume} />
           <Route exact path="/blog" component={Blogs}/>
           <Route path="/blog/:id" component={BlogPost} />
 

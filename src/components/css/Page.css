@@ -1,13 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+.page-container {
+	height: 350px;
+	width: 100%;
+}
+
 .intro {
 	height: 100%;
 	width: 100%;
 	margin: auto;
-	background-color: #b87272;
+	background: url('../../img/erikaSmall.jpg') no-repeat;
+	background-size: cover;
 	display: table;
 	top: 0;
+}
+
+@media screen and (min-width: 720px) {
+	.intro {
+		height: 100%;
+		width: 100%;
+		margin: auto;
+		background: url('../../img/erikaBig.jpg') no-repeat;
+		background-size: cover;
+		display: table;
+		top: 0;
+	}
 }
 
 .intro .inner {
@@ -20,7 +38,7 @@
 .content {
 	max-width: 90%;
 	margin: 0 auto;
-	text-align: center;
+	text-align: left;
 }
 
 .about {
@@ -42,32 +60,27 @@
 	text-shadow: 0px 0px 300px #000;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
 	.content h1 {
-		font-size: 4em;
+		font-size: 3em;
 	}
 }
 
 .icons {
 	display: flex;
 	justify-content: center;
+	flex-flow: column;
 }
 
 .btn {
 	font-family: 'Open Sans', sans-serif;
-	border-radius: 9px;
-	color: 	#a74b4e;
+	color: 	#fff;
 	padding: .5em .5em;
-	border: solid #a74b4e .2em;
+	border: none;
 	text-transform: uppercase;
 	text-decoration: none;
 	margin-right: 1em;
 	margin-bottom: 1em;
-}
-
-.btn:hover {
-	color: #fff;
-	border-color: #fff;
 }
 
 .isDisabled {
