@@ -7,6 +7,7 @@
 .app__footer {
   text-align: center;
   font-family: 'Lato', sans-serif;
+  font-weight: bolder;
   padding-bottom: .2em;
 }
 
@@ -22,5 +23,16 @@
 		width: 70%;
 		margin: 0 auto;
 	}
+}
+
+.social-media {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 1em;
+}
+
+.icon {
+	font-size: xx-large;
+	color: #2196f3;
 }
 

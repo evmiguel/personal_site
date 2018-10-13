@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 .page-container {
 	height: 350px;
 	width: 100%;
@@ -10,10 +7,22 @@
 	height: 100%;
 	width: 100%;
 	margin: auto;
-	background: url('../../img/erikaSmall.jpg') no-repeat;
+	background: url('../../img/erikaSmall.jpg') no-repeat fixed;
 	background-size: cover;
 	display: table;
 	top: 0;
+}
+
+@media screen and (min-width: 200px) and (max-width: 660px){
+	.intro {
+		height: 100%;
+		width: 100%;
+		margin: auto;
+		background: url('../../img/erikaSmaller.jpg') no-repeat fixed;
+		background-size: cover;
+		display: table;
+		top: 0;
+	}
 }
 
 @media screen and (min-width: 720px) {
@@ -21,7 +30,7 @@
 		height: 100%;
 		width: 100%;
 		margin: auto;
-		background: url('../../img/erikaBig.jpg') no-repeat;
+		background: url('../../img/erikaBig.jpg') no-repeat fixed;
 		background-size: cover;
 		display: table;
 		top: 0;

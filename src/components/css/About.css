@@ -1,3 +1,21 @@
 .container {
     display: flex;
 }
+
+.about__text {
+	background-color: #d3d3d359;
+	padding: 1em;
+	font-family: 'Lato', sans-serif;
+}
+
+.about__description {
+	background-color: #ffffffe8;
+	padding: 1em;
+	line-height: 1.5em;
+	font-size: large;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
