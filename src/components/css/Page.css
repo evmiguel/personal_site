@@ -1,5 +1,5 @@
 .page-container {
-	height: 350px;
+	height: 400px;
 	width: 100%;
 }
 
@@ -7,7 +7,7 @@
 	height: 100%;
 	width: 100%;
 	margin: auto;
-	background: url('../../img/erikaSmall.jpg') no-repeat fixed;
+	background: url('../../img/erikaSmall.jpg') no-repeat;
 	background-size: cover;
 	display: table;
 	top: 0;
@@ -18,7 +18,7 @@
 		height: 100%;
 		width: 100%;
 		margin: auto;
-		background: url('../../img/erikaSmaller.jpg') no-repeat fixed;
+		background: url('../../img/erikaSmaller.jpg') no-repeat;
 		background-size: cover;
 		display: table;
 		top: 0;
@@ -30,7 +30,7 @@
 		height: 100%;
 		width: 100%;
 		margin: auto;
-		background: url('../../img/erikaBig.jpg') no-repeat fixed;
+		background: url('../../img/erikaBig.jpg') no-repeat;
 		background-size: cover;
 		display: table;
 		top: 0;
@@ -67,6 +67,7 @@
 	color: #fff;
 	font-size: 3.5em;
 	text-shadow: 0px 0px 300px #000;
+	width: 60%;
 }
 
 @media screen and (min-width: 400px) {
