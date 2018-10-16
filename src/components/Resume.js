@@ -4,11 +4,19 @@ import './css/Resume.css'
 const Resume = (props) => {
 	return(
 		<div className='resume-container'>
-			<div className='left-panel'>
-			LEFT
+			<div className='skills entry'>
+				Skills
 			</div>
-			<div className='right-panel'>
-			RIGHT
+			<div className='resume-content'>
+				<div className='experience entry'>
+					Experience
+				</div>
+				<div className='projects entry'>
+					Projects
+				</div>
+				<div className='education entry'>
+					Education
+				</div>
 			</div>
 		</div>
 	)

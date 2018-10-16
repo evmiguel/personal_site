@@ -1,7 +1,56 @@
 .resume-container {
 	height: 100%;
+	display: flex;
+	flex-flow: column
 }
 
-.left-panel {
-	width: 30%;
+.resume-content {
+	display: flex;
+	flex-flow: column;
+	order: 1;
 }
+
+.entry {
+	height: 100px;
+}
+
+.experience {
+	background-color: blue;
+	width: 100%;
+}
+
+.projects {
+	background-color: red;
+	width: 100%;
+}
+
+.skills {
+	background-color: green;
+	width: 100%;
+	order: 2;
+}
+
+.education {
+	background-color: yellow;
+	width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+	.resume-container {
+		flex-flow: row;
+	}
+	.skills {
+		order: 1;
+		width: 30%;
+		height: 100%;
+	}
+	.resume-content {
+		width: 100%;
+	}
+
+	.experience, .projects, .education {
+		height: 33.3%;
+	}
+}
+
+
