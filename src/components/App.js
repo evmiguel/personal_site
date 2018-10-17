@@ -32,7 +32,7 @@ class App extends Component {
             <a href="https://www.linkedin.com/in/evmiguel" target="_blank"><FaLinkedin className='icon'/></a>
             <a href="https://www.instagram.com/evmigz" target='_blank'><FaInstagram className='icon'/></a>
           </nav>
-          <p>This page is powered by S3 static hosting, React, Redux, and Dynamodb. The entirety of this site has been created by Erika Miguel.</p>
+          <p>This page is powered by S3 static hosting, React, Redux, and Dynamodb. The entirety of this site has been created by Erika Miguel. <a href='https://github.com/evmiguel/personal_site' target='_blank'>Source code</a></p>
         </footer>
 
         </div>

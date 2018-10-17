@@ -1,3 +1,11 @@
+img {
+	width: 40%;
+}
+
+figure {
+	text-align: left;
+}
+
 .resume-container {
 	height: 100%;
 	display: flex;
@@ -36,10 +44,15 @@
 	text-align: left;
 }
 
-.experience > section > div > h3, .education > section > div > h3, h4 {
+.experience > section > div > h3, .education > section > div > h3, h4,
+.projects > section > div > h3, figcaption {
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	font-size: 13pt;
+	text-align: left;
+}
+
+figcaption {
 	text-align: left;
 }
 
@@ -99,9 +112,14 @@
 	padding-right: 10px;
 }
 
+.projects-section {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+}
 
 @media screen and (min-width: 600px) {
-	.entry, .technology-section {
+	.entry, .technology-section, .projects-section {
 		flex-flow: row;
 	}
 
@@ -113,12 +131,12 @@
 		text-align: right;
 	}
 
-	.experience > section > div > h3 {
+	.experience > section > div > h3, .education > section > div > h3, h4 {
 		text-align: right;
 	}
 
-	.education > section > div > h3, h4 {
-		text-align: right;
+	figure, figcaption, .projects > section > div > h3 {
+		text-align: center;
 	}
 }
 
