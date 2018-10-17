@@ -22,6 +22,13 @@
 	}
 }
 
+@media screen and (min-width: 2001px) {
+	.App {
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+
 .social-media {
 	display: flex;
 	justify-content: space-evenly;
