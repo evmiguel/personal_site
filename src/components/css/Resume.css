@@ -1,7 +1,8 @@
 .resume-container {
 	height: 100%;
 	display: flex;
-	flex-flow: column
+	flex-flow: column;
+	padding: 1em;
 }
 
 .resume-content {
@@ -10,46 +11,101 @@
 	order: 1;
 }
 
-.entry {
-	height: 100px;
+.resume-header {
+	font-family: 'Lato', sans-serif;
+	font-size: 20pt;
+	color: #6f6f6f
 }
 
+.entry {
+	display: flex;
+	flex-flow: column;
+}
+
+
 .experience {
-	background-color: blue;
 	width: 100%;
+}
+
+.experience-section {
+	display: flex;
+	align-items: right;
+}
+
+.experience-section > div > ul > li {
+	list-style-type: none;
+}
+
+.experience-section > div > ul > li > p {
+	text-align: right;
+}
+
+.experience > section > div > h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 13pt;
+	text-align: right;
+}
+
+.experience-co {
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+}
+
+.experience-text {
+	font-family: 'Lato', sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
 }
 
 .projects {
-	background-color: red;
 	width: 100%;
 }
 
-.skills {
-	background-color: green;
+.technology {
 	width: 100%;
-	order: 2;
+	display: flex;
+}
+
+.technology-section {
+	display: flex;
+	flex-flow: column;
+}
+
+.technology > section > div > h3 {
+	font-family: 'Lato', sans-serif;
+	font-size: 16pt;
+	color: #6f6f6f;
+	text-align: center;
+}
+
+.technology > section > div > ul > li > span {
+	font-family: 'Lato', sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.technology > section > div > ul > li {
+	padding-bottom: 5px;
+	list-style-type: disc;
+	color: #484747bf;
+}
+
+.technology > section > div > ul {
+	padding-right: 10px;
 }
 
 .education {
-	background-color: yellow;
 	width: 100%;
 }
 
 @media screen and (min-width: 600px) {
-	.resume-container {
+	.entry, .technology-section {
 		flex-flow: row;
 	}
-	.skills {
-		order: 1;
-		width: 30%;
-		height: 100%;
-	}
-	.resume-content {
-		width: 100%;
-	}
 
-	.experience, .projects, .education {
-		height: 33.3%;
+	.technology-section, .experience-section {
+		margin-left: auto;
 	}
 }
 

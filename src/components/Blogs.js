@@ -8,7 +8,7 @@ class Blogs extends Component {
     const { blogs } = this.props
 
     return(
-        <ul>
+        <ul className='blog-list'>
           {
             this.props.blogIds.map(blogId => (
               <li key={blogId} ><BlogLink id={blogId}/></li>
