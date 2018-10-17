@@ -23,13 +23,9 @@
 }
 
 
-.experience {
-	width: 100%;
-}
-
 .experience-section {
 	display: flex;
-	align-items: right;
+	flex-flow: column;
 }
 
 .experience-section > div > ul > li {
@@ -37,15 +33,26 @@
 }
 
 .experience-section > div > ul > li > p {
-	text-align: right;
+	text-align: left;
 }
 
-.experience > section > div > h3 {
+.experience > section > div > h3, .education > section > div > h3, h4 {
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	font-size: 13pt;
-	text-align: right;
+	text-align: left;
 }
+
+ .education > section > div > h3 {
+ 	font-size: 14pt;
+ }
+
+.education > section > div > h4 {
+	font-size: 12pt;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 
 .experience-co {
 	font-family: "Roboto", sans-serif;
@@ -56,10 +63,7 @@
 	font-family: 'Lato', sans-serif;
 	font-size: 12pt;
 	font-weight: bold;
-}
-
-.projects {
-	width: 100%;
+	line-height: 1.4;
 }
 
 .technology {
@@ -95,17 +99,26 @@
 	padding-right: 10px;
 }
 
-.education {
-	width: 100%;
-}
 
 @media screen and (min-width: 600px) {
 	.entry, .technology-section {
 		flex-flow: row;
 	}
 
-	.technology-section, .experience-section {
+	.technology-section, .experience-section, .education-section {
 		margin-left: auto;
+	}
+
+	.experience-section > div > ul > li > p {
+		text-align: right;
+	}
+
+	.experience > section > div > h3 {
+		text-align: right;
+	}
+
+	.education > section > div > h3, h4 {
+		text-align: right;
 	}
 }
 
