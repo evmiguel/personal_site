@@ -93,6 +93,12 @@
 	margin-bottom: 1em;
 }
 
+.btn.selected {
+    background-color: gray;
+    opacity: .7;
+    width: fit-content;
+}
+
 .isDisabled {
   color: currentColor;
   cursor: not-allowed;
