@@ -9,3 +9,7 @@ To install all package dependencies, run:
 ## Development Server
 To run the dev server:
 `yarn start`
+
+## Production Build
+To create production build:
+`yarn build`
