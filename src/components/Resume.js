@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './css/Resume.css'
 import erikareads from '../img/erikareads.png'
 import memorygame from '../img/memorygame.png'
 
-const Resume = (props) => {
-	return(
+class Resume extends Component {
+	state = {
+		showResumeButton: false
+	}
+	render() {
+		return(
 		<div className='resume-container'>
+			<div className='download'>
+				<a href='https://s3.amazonaws.com/evm-resumes/EVM_Resume_10152018.pdf'
+				target='_blank'>DOWNLOAD RESUME</a>
+			</div>
 			<div className='technology entry'>
 				<h2 className='resume-header'>Technologies</h2>
 				<section className='technology-section'>
@@ -152,7 +160,8 @@ const Resume = (props) => {
 				</div>
 			</div>
 		</div>
-	)
+		)
+	}
 }
 
 export default Resume
