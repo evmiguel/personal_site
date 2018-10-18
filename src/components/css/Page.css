@@ -93,10 +93,12 @@
 	margin-bottom: 1em;
 }
 
-.btn.selected {
+.btn:hover, .btn:focus, .btn.selected {
     background-color: gray;
     opacity: .7;
     width: fit-content;
+    text-decoration: underline;
+    border-radius: 5px;
 }
 
 .isDisabled {
