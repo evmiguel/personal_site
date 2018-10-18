@@ -93,7 +93,7 @@
 	margin-bottom: 1em;
 }
 
-.btn:hover, .btn:focus, .btn.selected {
+.btn:focus, .btn[aria-pressed="true"] {
     background-color: gray;
     opacity: .7;
     width: fit-content;

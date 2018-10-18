@@ -13,9 +13,9 @@ class Page extends Component {
 						<div className="content">
 							<NavLink name="title" to="/"><h1>Erika Miguel</h1></NavLink>
 							<div className="icons">
-								<NavLink name="aboutButton" className={`btn ${(!location.pathname.includes('resume') && !location.pathname.includes('blog')) ? 'selected' : ''}`} to="/">About</NavLink>
-								<NavLink name="resumeButton" className={`btn ${location.pathname.includes('resume') ? 'selected' : ''}`} to="/resume">Resume</NavLink>
-								<NavLink name="blogButton" className={`btn ${location.pathname.includes('blog') ? 'selected' : ''}`} to="/blog">Blog</NavLink>
+								<NavLink name="aboutButton" role='button' className='btn' aria-pressed={`${(!location.pathname.includes('resume') && !location.pathname.includes('blog')) ? 'true' : 'false'}`} to="/">About</NavLink>
+								<NavLink name="resumeButton" role='button' className='btn' aria-pressed={`${location.pathname.includes('resume') ? 'true' : 'false'}`} to="/resume">Resume</NavLink>
+								<NavLink name="blogButton" role='button' className='btn' aria-pressed={`${location.pathname.includes('blog') ? 'true' : 'false'}`} to="/blog">Blog</NavLink>
 							</div>
 						</div>
 					</div>
