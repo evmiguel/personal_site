@@ -7,11 +7,11 @@ const About = (props) => {
 	    	<div className='about__text'>
 	    		<h2>Hi! I'm Erika.</h2>
 	    		<p className='about__description'>
-	    			I am a Boston/Cambridge/Somerville area based software developer with 3 years of career experience in tech.
-	    			I have worked various roles in DevOps, from infrastructure maintenace to automation software engineering.
-	    			Now, I am making a career shift into Front End development. Currently, I am enrolled in the Front End Nanodegree
-	    			and React Nanodegree programs at Udacity. I am interested in Front End roles and software engineer positions that
-	    			can leverage my Front End and Python programming experience.
+	    			I am a Boston/Cambridge/Somerville area based software developer with a Bachelor of Arts in Computer Science
+	    			from Smith College and 3 years of career experience in tech. I have worked various roles in DevOps, from infrastructure
+	    			maintenace to automation software engineering. Now, I am making a career shift into Front End development, through self-study
+	    			and project-based learning. Currently, I am enrolled in the Front End Nanodegree and React Nanodegree programs at Udacity.
+	    			I am interested in Front End roles and software engineer positions that can leverage my Front End and Python programming experience.
 	    		</p>
 	    		<p className='about__description'>
 	    			I am part of the LGBTQIA+ community and am part of POC spaces. Together with my fianceé, Megan, we also host an &nbsp;

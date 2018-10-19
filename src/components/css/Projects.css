@@ -1,0 +1,26 @@
+.projects > section > div > h3, figcaption {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 13pt;
+	text-align: center;
+}
+
+.projects-section {
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+}
+
+.projects-section div {
+	border-bottom: thin solid #6f6f6f2e;
+}
+
+.projects > section > div > h3 {
+		text-align: center;
+	}
+
+@media screen and (min-width: 600px) {
+	.projects > section > div > h3 {
+		text-align: center;
+	}
+}

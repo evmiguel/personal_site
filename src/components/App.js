@@ -8,6 +8,7 @@ import BlogPost from './BlogPost'
 import { handleInitialBlogData } from '../actions/blogs'
 import About from './About'
 import Resume from './Resume'
+import Projects from './Projects'
 import { FaLinkedin, FaGithub, FaInstagram, FaAirbnb } from 'react-icons/fa';
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
           <Route path="/resume" component={Resume} />
           <Route exact path="/blog" component={Blogs}/>
           <Route path="/blog/:id" component={BlogPost} />
+          <Route path="/projects" component={Projects} />
 
         <footer className="app__footer">
           <nav className='social-media'>
