@@ -21,8 +21,9 @@
 }
 
 .projects > section > div > h3 {
-		text-align: center;
-	}
+	text-align: center;
+	text-transform: uppercase;
+}
 
 @media screen and (min-width: 600px) {
 	.projects > section > div > h3 {
