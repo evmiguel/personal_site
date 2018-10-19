@@ -5,7 +5,7 @@ import './css/Projects.css'
 
 const Projects = (props) => {
 	return (
-		<div className='projects entry'>
+		<div className='projects'>
 			<h2 className='resume-header'>Projects</h2>
 			<section className='projects-section'>
 				<div>
