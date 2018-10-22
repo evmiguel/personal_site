@@ -13,11 +13,13 @@ const Projects = (props) => {
 						 img={erikareads}
 						 alt='Bookshelf Project Submission for Udacity'
 						 caption="Project submission for Udacity's React course. Deployed on AWS."
+						 url='https://reactproj1.erikamiguel.com'
 						 repo='https://github.com/evmiguel/reactnd-project-myreads-starter' />
 				<Project name='Memory Game Submission'
 						 img={memorygame}
 						 alt='Memory game Submission for Udacity'
 						 caption="Project submission for Udacity's front end course. Deployed on AWS."
+						 url='https://memorygame.erikamiguel.com'
 						 repo='https://github.com/evmiguel/fend-project-memory-game' />
 			</section>
 		</div>

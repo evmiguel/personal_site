@@ -3,10 +3,6 @@ import {
   receiveData
 } from '../actions/shared'
 
-function generateId () {
-  return Math.random().toString(36).substring(2);
-}
-
 // This is a thunk, whereby a function is dispatched, instead of an action
 // The action will be delayed until the "GET request" has been made
 export function handleInitialBlogData () {

@@ -5,8 +5,6 @@ import { connect } from 'react-redux'
 
 class Blogs extends Component {
   render() {
-    const { blogs } = this.props
-
     return(
         <ul className='blog-list'>
           {

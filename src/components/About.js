@@ -15,7 +15,7 @@ const About = (props) => {
 	    		</p>
 	    		<p className='about__description'>
 	    			I am part of the LGBTQIA+ community and am part of POC spaces. Together with my fianceé, Megan, we also host an &nbsp;
-	    			<a href='https://www.airbnb.com/rooms/27405784' target='_blank'>Airbnb</a> in Somerville and are also planning our wedding! My other hobbies include biking, reading short-stories,
+	    			<a href='https://www.airbnb.com/rooms/27405784' target='_blank' rel="noopener noreferrer">Airbnb</a> in Somerville and are also planning our wedding! My other hobbies include biking, reading short-stories,
 	    			and cooking. Lovely to meet you!
 	    		</p>
 	    	</div>

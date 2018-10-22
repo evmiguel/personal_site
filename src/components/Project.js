@@ -6,7 +6,7 @@ const Project = (props) => {
 		<div>
 			<h3>{props.name}</h3>
 			<figure>
-			  <a href="https://reactproj1.erikamiguel.com" target="_blank">
+			  <a href={props.url} target="_blank" rel="noopener noreferrer">
 			  	<img src={props.img}
 			    		alt={props.alt} />
 			  </a>

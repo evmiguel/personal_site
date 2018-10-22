@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './css/App.css';
 import Page from './Page'
@@ -9,7 +9,7 @@ import { handleInitialBlogData } from '../actions/blogs'
 import About from './About'
 import Resume from './Resume'
 import Projects from './Projects'
-import { FaLinkedin, FaGithub, FaInstagram, FaAirbnb } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
 class App extends Component {
   componentDidMount() {
@@ -30,11 +30,11 @@ class App extends Component {
 
         <footer className="app__footer">
           <nav className='social-media'>
-            <a href="https://github.com/evmiguel" target='_blank'><FaGithub className='icon'/></a>
-            <a href="https://www.linkedin.com/in/evmiguel" target="_blank"><FaLinkedin className='icon'/></a>
-            <a href="https://www.instagram.com/evmigz" target='_blank'><FaInstagram className='icon'/></a>
+            <a href="https://github.com/evmiguel" target='_blank' rel="noopener noreferrer"><FaGithub className='icon'/></a>
+            <a href="https://www.linkedin.com/in/evmiguel" target="_blank" rel="noopener noreferrer"><FaLinkedin className='icon'/></a>
+            <a href="https://www.instagram.com/evmigz" target='_blank' rel="noopener noreferrer"><FaInstagram className='icon'/></a>
           </nav>
-          <p>This page is powered by S3 static hosting, React, Redux, and Dynamodb. The entirety of this site has been created by Erika Miguel. <a href='https://github.com/evmiguel/personal_site' target='_blank'>Source code</a></p>
+          <p>This page is powered by S3 static hosting, React, Redux, and Dynamodb. The entirety of this site has been created by Erika Miguel. <a href='https://github.com/evmiguel/personal_site' target='_blank' rel="noopener noreferrer">Source code</a></p>
         </footer>
 
         </div>
@@ -43,10 +43,4 @@ class App extends Component {
   }
 }
 
-/** connector function that returns an App Component
-	conntected to the store */
-
-function mapStateToProps(state) {
-  return {}
-}
 export default connect()(App)

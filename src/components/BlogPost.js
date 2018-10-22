@@ -7,7 +7,6 @@ class BlogPost extends Component {
 		console.log("here")
 	}
 	render() {
-		const {blogPost} = this.props
 		return(
 			<div>
 				<h1 className="blog__heading">{this.props.blogPost.title}</h1>

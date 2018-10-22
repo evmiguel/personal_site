@@ -10,7 +10,7 @@ class Resume extends Component {
 		<div className='resume-container'>
 			<div className='download'>
 				<a href='https://s3.amazonaws.com/evm-resumes/EVM_Resume_10152018.pdf'
-				target='_blank'>DOWNLOAD RESUME</a>
+				target='_blank' rel='noopener noreferrer'>DOWNLOAD RESUME</a>
 			</div>
 			<div className='technology entry'>
 				<h2 className='resume-header'>Technologies</h2>
