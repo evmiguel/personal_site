@@ -1,6 +1,7 @@
 import React from 'react'
 import erikareads from '../img/erikareads.png'
 import memorygame from '../img/memorygame.png'
+import wouldyourather from '../img/wouldyourather.png'
 import Project from './Project'
 import './css/Projects.css'
 
@@ -21,6 +22,12 @@ const Projects = (props) => {
 						 caption="Project submission for Udacity's front end course. Deployed on AWS."
 						 url='https://memorygame.erikamiguel.com'
 						 repo='https://github.com/evmiguel/fend-project-memory-game' />
+				<Project name='Would You Rather Game Submission'
+						 img={wouldyourather}
+						 alt='Would You Rather Game Submission for Udacity'
+						 caption="Second project submission for Udacity's React course. Deployed on AWS."
+						 url='https://reactproj2.erikamiguel.com'
+						 repo='https://github.com/evmiguel/would-you-rather' />
 			</section>
 		</div>
 
