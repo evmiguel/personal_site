@@ -35,6 +35,7 @@ hr {
 }
 
 .blog__heading {
+	margin-top: .1em;
 	font-size: 2em;
 	color: #a74b4e;
 }
@@ -42,7 +43,8 @@ hr {
 .blog__content {
 	font-size: 1.2em;
 	font-weight: 600;
-	color: #80808054;
+	color: #484848fc;
+	line-height: 1.6;
 }
 
 @media screen and (min-width: 500px) {
@@ -53,4 +55,10 @@ hr {
 		padding-left: 1.5em;
 		padding-right: 1.5em;
 	}
+}
+
+.back-btn {
+	color: #484747c2;
+	padding-top: .5em;
+	cursor: pointer;
 }

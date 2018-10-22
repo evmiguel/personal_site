@@ -1,14 +1,19 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import  './css/Blogs.css'
+import { FaArrowLeft } from 'react-icons/fa';
+
 
 class BlogPost extends Component {
-	componentDidMount() {
-		console.log("here")
+
+	goBack = () => {
+		this.props.history.push('/blog')
 	}
+
 	render() {
 		return(
 			<div>
+				<FaArrowLeft className='back-btn' onClick={this.goBack} />
 				<h1 className="blog__heading">{this.props.blogPost.title}</h1>
 				<h4 className="blog__date">{this.props.blogPost.date}</h4>
 				<p className="blog__content">{this.props.blogPost.content}</p>
