@@ -59,7 +59,8 @@ figure {
 	text-align: left;
 }
 
-.experience > section > div > h3, .education > section > div > h3, h4 {
+.experience > section > div > h3, .education > section > div > h3, h4,
+.awards > section > div > h3, .awards > section > div > h4 {
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	font-size: 13pt;
@@ -70,11 +71,11 @@ figcaption {
 	text-align: left;
 }
 
- .education > section > div > h3 {
+ .education > section > div > h3,  .awards > section > div > h3 {
  	font-size: 14pt;
  }
 
-.education > section > div > h4 {
+.education > section > div > h4, .awards > section > div > h4 {
 	font-size: 12pt;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -131,7 +132,7 @@ figcaption {
 		flex-flow: row;
 	}
 
-	.technology-section, .experience-section, .education-section {
+	.technology-section, .experience-section, .education-section, .awards-section {
 		margin-left: auto;
 	}
 
@@ -139,7 +140,8 @@ figcaption {
 		text-align: right;
 	}
 
-	.experience > section > div > h3, .education > section > div > h3, h4 {
+	.experience > section > div > h3, .education > section > div > h3, h4,
+	.awards > section > div > h3, .awards > section > div > h4 {
 		text-align: right;
 	}
 

@@ -117,13 +117,27 @@ class Resume extends Component {
 						</div>
 						<div>
 							<h3>UDACITY</h3>
+							<h4>Nanodegree, React Developer</h4>
+							<h4>September 2018 - November 2018</h4>
+						</div>
+						<div>
+							<h3>UDACITY</h3>
 							<h4>Nanodegree, Front End Web Developer</h4>
 							<h4>September 2018 - Present</h4>
 						</div>
 						<div>
-							<h3>UDACITY</h3>
-							<h4>Nanodegree, React Developer</h4>
-							<h4>September 2018 - Present</h4>
+							<h3>COURSERA</h3>
+							<h4>Algorithms and Data Structures Specialization</h4>
+							<h4>October 2018 - Present</h4>
+						</div>
+					</section>
+				</div>
+				<div className='awards entry'>
+					<h2 className='resume-header'>Awards</h2>
+					<section className='awards-section'>
+						<div>
+							<h3>GIRL DEVELOP IT BOSTON - 2ND ANNUAL HACKATHON</h3>
+							<h4>"Best Tech" with Amazon Fire HD 8 prize</h4>
 						</div>
 					</section>
 				</div>
