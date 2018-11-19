@@ -1,6 +1,7 @@
 import React from 'react'
 import erikareads from '../img/erikareads.png'
 import memorygame from '../img/memorygame.png'
+import gdiboston from '../img/gdiboston.png'
 import wouldyourather from '../img/wouldyourather.png'
 import Project from './Project'
 import './css/Projects.css'
@@ -28,6 +29,12 @@ const Projects = (props) => {
 						 caption="Second project submission for Udacity's React course. Deployed on AWS."
 						 url='https://reactproj2.erikamiguel.com'
 						 repo='https://github.com/evmiguel/would-you-rather' />
+				<Project name='GDI Boston Hackathon Submission'
+						 img={gdiboston}
+						 alt='GDI Boston Hackathon Submission'
+						 caption="Hackathon submission for the GDI Boston 2nd Annual Hackathon"
+						 url='https://www.linkedin.com/pulse/gdi-boston-2nd-annual-hackathon-process-project-after-erika-miguel/'
+						 repo='https://github.com/evmiguel/workout-cookbook' />
 			</section>
 		</div>
 
