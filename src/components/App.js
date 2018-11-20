@@ -34,7 +34,7 @@ class App extends Component {
             <a href="https://www.linkedin.com/in/evmiguel" target="_blank" rel="noopener noreferrer"><FaLinkedin className='icon'/></a>
             <a href="https://www.instagram.com/evmigz" target='_blank' rel="noopener noreferrer"><FaInstagram className='icon'/></a>
           </nav>
-          <p>This page is powered by S3 static hosting, React, Redux, and Dynamodb. The entirety of this site has been created by Erika Miguel. <a href='https://github.com/evmiguel/personal_site' target='_blank' rel="noopener noreferrer">Source code</a></p>
+          <p>This page is powered by GCP Firebase hosting, React, Redux, and DynamoDB. The entirety of this site has been created by Erika Miguel. <a href='https://github.com/evmiguel/personal_site' target='_blank' rel="noopener noreferrer">Source code</a></p>
         </footer>
 
         </div>
