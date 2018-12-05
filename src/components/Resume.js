@@ -9,7 +9,7 @@ class Resume extends Component {
 		return(
 		<div className='resume-container'>
 			<div className='download'>
-				<a href='https://s3.amazonaws.com/evm-resumes/EVM_Resume_11192018.pdf'
+				<a href='https://s3.amazonaws.com/evm-resumes/EVM_Resume_12052018.pdf'
 				target='_blank' rel='noopener noreferrer'>DOWNLOAD RESUME</a>
 			</div>
 			<div className='technology entry'>
@@ -71,7 +71,7 @@ class Resume extends Component {
 					<section className='experience-section'>
 						<div>
 							<h3>SOFTWARE DEVELOPER</h3>
-							<h3><span className='experience-co'>IDEX, ASA</span>, Wilmington, MA, March 2017 - August 2018</h3>
+							<h3><span className='experience-co'>IDEX Biometrics</span>, Wilmington, MA, March 2017 - August 2018</h3>
 							<ul>
 								<li>
 									<p className='experience-text'>Software developer in DevOps and automation responsible
@@ -123,7 +123,7 @@ class Resume extends Component {
 						<div>
 							<h3>UDACITY</h3>
 							<h4>Nanodegree, Front End Web Developer</h4>
-							<h4>September 2018 - Present</h4>
+							<h4>September 2018 - December 2018</h4>
 						</div>
 						<div>
 							<h3>COURSERA</h3>
