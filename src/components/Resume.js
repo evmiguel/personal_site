@@ -70,6 +70,10 @@ class Resume extends Component {
 					<h2 className='resume-header'>Work Experience</h2>
 					<section className='experience-section'>
 						<div>
+							<h3>OPEN WEB ENGINEER</h3>
+							<h3><span className='experience-co'>Bocoup</span>, Boston, MA, January 2019 - </h3>
+						</div>
+						<div>
 							<h3>SOFTWARE DEVELOPER</h3>
 							<h3><span className='experience-co'>IDEX Biometrics</span>, Wilmington, MA, March 2017 - August 2018</h3>
 							<ul>
