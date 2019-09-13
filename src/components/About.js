@@ -18,7 +18,7 @@ const About = (props) => {
 				Erika believes in uplifting the voices of marginalized groups in tech, particularly women,
 				trans / GNC folks, and people of color. She believes in accessibility, work life balance,
 				and listening to one's needs. She lives in Quincy, Massachusetts with her lovely wife (and
-				best friend), Megan. They love to garden, cook, exercize, travel, and learn new things.
+				best friend), Megan. They love to garden, cook, exercise, travel, and learn new things.
 				Erika is currently exploring machine learning and data visualization off-hours.
 	    		</p>
 	    	</div>
