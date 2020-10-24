@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 885px) {
 	.App {
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}
 }
@@ -28,15 +28,3 @@
 		margin: 0 auto;
 	}
 }
-
-.social-media {
-	display: flex;
-	justify-content: space-evenly;
-	padding-top: 1em;
-}
-
-.icon {
-	font-size: xx-large;
-	color: #2196f3;
-}
-
